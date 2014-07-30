@@ -4,11 +4,13 @@ cc.game.onStart = function(){
     //2.针对手机浏览器和PC浏览器启用不同的分辨率适配策略。
     if (cc.sys.isMobile)
     {
-        cc.view.setDesignResolutionSize(320, 500, cc.ResolutionPolicy.FIXED_WIDTH);
+        cc.log("mobile");
+        cc.view.setDesignResolutionSize(800, 450, cc.ResolutionPolicy.FIXED_WIDTH);
     }
     else
     {
-        cc.view.setDesignResolutionSize(320, 480, cc.ResolutionPolicy.SHOW_ALL);
+        cc.log("web");
+        cc.view.setDesignResolutionSize(800, 450, cc.ResolutionPolicy.SHOW_ALL);
     }
 	cc.view.resizeWithBrowserSize(true);
     //load resources

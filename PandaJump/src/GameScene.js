@@ -6,17 +6,11 @@ var GameScene = cc.Scene.extend({
     {
         this._super();
 
-        var bg = new cc.Sprite(res.bg);
-        bg.attr({
-            anchorX: 0.5,
-            anchorY: 0.5,
-            x: cc.winSize.width / 2,
-            y: cc.winSize.height / 2
-        });
-        this.addChild(bg);
+        gBackgroundLayer = new BackgroundLayer();
+        this.addChild(gBackgroundLayer);
 
         gGameLayer = new GameLayer();
-        this.addChild(gGameLayer, 1);
+        this.addChild(gGameLayer);
     }
 });
 
