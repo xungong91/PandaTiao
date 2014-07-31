@@ -10,6 +10,12 @@
     <Filter Include="resource">
       <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
     </Filter>
+    <Filter Include="sprite">
+      <UniqueIdentifier>{324cc921-2bd4-492e-9a3f-c8776a0fac46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameLayer">
+      <UniqueIdentifier>{0c135e33-e429-4c1b-a6ac-5069c6a03629}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,6 +27,15 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\sprite\CPandaSprite.cpp">
+      <Filter>sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameLayer\CGameLayer.cpp">
+      <Filter>gameLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gameLayer\CGameScene.cpp">
+      <Filter>gameLayer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -31,6 +46,18 @@
     </ClInclude>
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\sprite\CPandaSprite.h">
+      <Filter>sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\sprite\CPandaDefines.h">
+      <Filter>sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameLayer\CGameLayer.h">
+      <Filter>gameLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gameLayer\CGameScene.h">
+      <Filter>gameLayer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

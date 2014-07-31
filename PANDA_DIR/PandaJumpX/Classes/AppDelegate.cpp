@@ -1,7 +1,12 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "gameLayer/CGameScene.h"
 
 USING_NS_CC;
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
+#include "vld.h"
+#endif
 
 AppDelegate::AppDelegate() {
 
@@ -16,9 +21,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLView::create("My Game");
+		glview = GLView::create("PandaJump");
+		glview->setFrameSize(600, 400);
         director->setOpenGLView(glview);
-    }
+	}
+
+	glview->setDesignResolutionSize(960, 640, ResolutionPolicy::SHOW_ALL);
 
     // turn on display FPS
     director->setDisplayStats(true);
@@ -27,7 +35,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    auto scene = CGameScene::create();
 
     // run
     director->runWithScene(scene);
