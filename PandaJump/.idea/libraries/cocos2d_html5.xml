@@ -2,6 +2,7 @@
   <library name="cocos2d-html5" type="javaScript">
     <properties>
       <sourceFilesUrls>
+<<<<<<< HEAD
         <item url="file://$PROJECT_DIR$/../../../cocos2d-js-v3.0-rc1/frameworks/js-bindings" />
         <item url="file://$PROJECT_DIR$/../../../cocos2d-js-v3.0-rc1/frameworks/cocos2d-html5" />
       </sourceFilesUrls>
@@ -9,6 +10,15 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../../../cocos2d-js-v3.0-rc1/frameworks/js-bindings" />
       <root url="file://$PROJECT_DIR$/../../../cocos2d-js-v3.0-rc1/frameworks/cocos2d-html5" />
+=======
+        <item url="file://$PROJECT_DIR$/../../../cocos2d-js-v3.0-rc1/frameworks/cocos2d-html5" />
+        <item url="file://$PROJECT_DIR$/../../../cocos2d-js-v3.0-rc1/frameworks/js-bindings" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../cocos2d-js-v3.0-rc1/frameworks/cocos2d-html5" />
+      <root url="file://$PROJECT_DIR$/../../../cocos2d-js-v3.0-rc1/frameworks/js-bindings" />
+>>>>>>> origin/master
     </CLASSES>
     <SOURCES />
   </library>

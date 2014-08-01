@@ -13,7 +13,7 @@ var GameLayer = cc.Layer.extend({
         cc.spriteFrameCache.addSpriteFrames(res.panda_plist);
         var pandaTexture = cc.textureCache.addImage(res.panda_png);
         mPandaBatchNode = cc.SpriteBatchNode.create(pandaTexture);
-        mPandaBatchNode.setBlendFunc(cc.SRC_ALPHA, cc.ONE);
+        //mPandaBatchNode.setBlendFunc(cc.SRC_ALPHA, cc.ONE);
         this.addChild(mPandaBatchNode);
 
         var animFrames = [];
@@ -23,7 +23,7 @@ var GameLayer = cc.Layer.extend({
             var frame = cc.spriteFrameCache.getSpriteFrame(str);
             animFrames.push(frame);
         }
-        var animation = cc.Animation.create(animFrames, 0.05);
+        var animation = cc.Animation.create(animFrames, 0.08);
         cc.animationCache.addAnimation(animation, "Run");
 
         var panda = new cc.Sprite(cc.spriteFrameCache.getSpriteFrame("runPanda0.png"));

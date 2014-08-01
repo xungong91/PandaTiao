@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="7" tilewidth="60" tileheight="60">
+ <tileset firstgid="1" name="2" tilewidth="60" tileheight="60">
+  <image source="2.jpg" width="2000" height="420"/>
+ </tileset>
+ <layer name="floor" width="20" height="7">
+  <data encoding="base64" compression="zlib">
+   eJwNwwc6FgAAANA/MorsE0iI7JyASMrmBMje4wRZDVTiBMjecoKsyB6n8d73vUeBQCDIYB8bYqhhhvvEp0YY6TOjjDbGWOOMN8FEn5vkC5NNMdWXppnuKzPMNMtsc8w1z9fmW2Chbyyy2LeW+M5S3/vBMsutsNIqq62x1jrrbbDRjzbZbIutttluh5122W2PvfbZ74CDfnLIYUccdczPfvGr3xx3wkm/+8OfTvnLaWecdc55f7vgoksuu+Kqa6674aZbbrvjrn/c86/7Hnjokcf+88RT/3vmuRdeeuW1N956570PI+074w==
+  </data>
+ </layer>
+ <objectgroup name="player" width="20" height="7">
+  <object name="hero" x="35" y="329" width="28" height="24">
+   <ellipse/>
+  </object>
+  <object name="Portal" x="1166" y="317" width="23" height="39">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

@@ -6,6 +6,7 @@ var GameScene = cc.Scene.extend({
     {
         this._super();
 
+<<<<<<< HEAD
 
         cc.log("12312");
         gGameLayer = new GameLayer();
@@ -20,6 +21,13 @@ var GameScene = cc.Scene.extend({
         });
         //this.addChild(bg);
 
+=======
+        gBackgroundLayer = new BackgroundLayer();
+        this.addChild(gBackgroundLayer);
+
+        gGameLayer = new GameLayer();
+        this.addChild(gGameLayer);
+>>>>>>> origin/master
     }
 });
 
