@@ -2,6 +2,7 @@
 #define _C_GAME_SCENE_H_
 
 #include "cocos2d.h"
+#include "CHudLayer.h"
 
 class CGameScene : public cocos2d::Scene
 {

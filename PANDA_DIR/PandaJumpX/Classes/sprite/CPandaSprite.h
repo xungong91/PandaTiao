@@ -11,14 +11,22 @@ public:
 	~CPandaSprite();
 	CREATE_FUNC(CPandaSprite);
 	bool init();
+	virtual void onEnter();
+	virtual void onExit();
 
 	void run();
+	void jump();
 
 	CC_SYNTHESIZE_RETAIN(cocos2d::Action*, _runAction, RunAction);
 	CC_SYNTHESIZE_RETAIN(cocos2d::Action*, _jumpAction, JumpAction);
+	CC_SYNTHESIZE(cocos2d::Vec2, _desiredPosition, DesiredPosition);
 
+	virtual void update(float dt);
 private:
 	_ActionState mActionState;
+	//µØÇòÒýÁ¦
+	float mFallSpeed;
+	void onfreeFall(float dt);
 };
 
 #endif

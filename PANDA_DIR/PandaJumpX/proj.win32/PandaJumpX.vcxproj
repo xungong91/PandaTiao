@@ -136,7 +136,9 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\gameLayer\CGameLayer.cpp" />
     <ClCompile Include="..\Classes\gameLayer\CGameScene.cpp" />
+    <ClCompile Include="..\Classes\gameLayer\CHudLayer.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\sprite\CPandaJumpUp.cpp" />
     <ClCompile Include="..\Classes\sprite\CPandaSprite.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -144,8 +146,10 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\gameLayer\CGameLayer.h" />
     <ClInclude Include="..\Classes\gameLayer\CGameScene.h" />
+    <ClInclude Include="..\Classes\gameLayer\CHudLayer.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
     <ClInclude Include="..\Classes\sprite\CPandaDefines.h" />
+    <ClInclude Include="..\Classes\sprite\CPandaJumpUp.h" />
     <ClInclude Include="..\Classes\sprite\CPandaSprite.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>

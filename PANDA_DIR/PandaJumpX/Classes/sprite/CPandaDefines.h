@@ -3,8 +3,10 @@
 
 enum class _ActionState
 {
-	run = 0,
-	jump
+	not = 0,
+	run,
+	jump_up,
+	jump_down
 };
 
 #endif
