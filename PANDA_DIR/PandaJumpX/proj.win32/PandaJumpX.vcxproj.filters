@@ -39,9 +39,6 @@
     <ClCompile Include="..\Classes\gameLayer\CHudLayer.cpp">
       <Filter>gameLayer</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\sprite\CPandaJumpUp.cpp">
-      <Filter>sprite</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -67,9 +64,6 @@
     </ClInclude>
     <ClInclude Include="..\Classes\gameLayer\CHudLayer.h">
       <Filter>gameLayer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\sprite\CPandaJumpUp.h">
-      <Filter>sprite</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

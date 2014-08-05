@@ -96,7 +96,7 @@ void CPandaSprite::update( float dt )
 {
 	Sprite::update(dt);
 
-	onfreeFall(dt);
+	//onfreeFall(dt);
 }
 
 void CPandaSprite::onfreeFall(float dt)

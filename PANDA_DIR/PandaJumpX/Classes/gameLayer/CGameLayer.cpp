@@ -27,6 +27,7 @@ bool CGameLayer::init()
 	mPandaBatchNode->addChild(mPanda);
 	mPanda->run();
 	
+	initWorld();
 	return true;
 }
 
@@ -49,7 +50,7 @@ void CGameLayer::onTouchBegan()
 void CGameLayer::update( float dt )
 {
 	Layer::update(dt);
-	updatePositions();
+	//updatePositions();
 }
 
 void CGameLayer::updatePositions()
@@ -62,4 +63,8 @@ void CGameLayer::updatePositions()
 		pointY = 0;
 	}
 	mPanda->setPosition(mPanda->getDesiredPosition().x, pointY);
+}
+
+void CGameLayer::initWorld()
+{
 }
