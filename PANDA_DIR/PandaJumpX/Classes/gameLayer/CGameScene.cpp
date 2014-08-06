@@ -1,25 +1,30 @@
 #include "CGameScene.h"
 #include "gameLayer/CGameLayer.h"
 #include "gameLayer/CHudLayer.h"
+#include "Defines.h"
 
 USING_NS_CC;
 
+CGameScene* CGameScene::gGameScene;
+
 CGameScene::CGameScene()
 {
-
+	gGameScene = this;
 }
 
 CGameScene::~CGameScene()
 {
-
+	gGameScene = NULL;
 }
 
 bool CGameScene::init()
 {
-	if (!Scene::init())
+	if (!Scene::initWithPhysics())
 	{
 		return false;
 	}
+	this->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+
 	this->addChild(LayerColor::create(Color4B(255,255,255,255)));
 
 	//¿ØÖÆ²ã
@@ -33,4 +38,5 @@ bool CGameScene::init()
 	hudLayer->setHudDelegate(gameLayer);
 	return true;
 }
+
 

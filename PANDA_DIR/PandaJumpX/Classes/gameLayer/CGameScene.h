@@ -7,10 +7,13 @@
 class CGameScene : public cocos2d::Scene
 {
 public:
+	static CGameScene* gGameScene;
 	CGameScene();
 	~CGameScene();
 	CREATE_FUNC(CGameScene);
 	bool init();
+
+	cocos2d::PhysicsWorld *mWorld;
 private:
 
 };

@@ -65,6 +65,9 @@
     <ClInclude Include="..\Classes\gameLayer\CHudLayer.h">
       <Filter>gameLayer</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Defines.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">

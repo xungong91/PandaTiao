@@ -1,4 +1,5 @@
 #include "CGameLayer.h"
+#include "Defines.h"
 
 USING_NS_CC;
 
@@ -20,14 +21,18 @@ bool CGameLayer::init()
 	}
 
 	SpriteFrameCache::getInstance()->addSpriteFramesWithFile("panda.plist");
-	mPandaBatchNode = CCSpriteBatchNode::create("panda.png");
+	mPandaBatchNode = SpriteBatchNode::create("panda.png");
 	this->addChild(mPandaBatchNode);
 
 	mPanda = CPandaSprite::create();
 	mPandaBatchNode->addChild(mPanda);
 	mPanda->run();
+
+	auto body = PhysicsBody::createBox(mPanda->getContentSize());  
+	body->setDynamic(true);
+	mPanda->setPhysicsBody(body);
 	
-	initWorld();
+	//initWorld();
 	return true;
 }
 
@@ -67,4 +72,13 @@ void CGameLayer::updatePositions()
 
 void CGameLayer::initWorld()
 {
+	auto ground = Node::create();
+	ground->setPhysicsBody(PhysicsBody::createEdgeSegment(Vec2(0, 20), Vec2(960, 20)));
+	this->addChild(ground);
+
+	auto box = Node::create();
+	Vec2 points[4] = {Vec2(-100, -100), Vec2(-100, 100), Vec2(100, 100), Vec2(100, -100)};
+	box->setPhysicsBody(PhysicsBody::createPolygon(points, 4));
+	box->setPosition(WINSIZE.width/2, WINSIZE.height/2);
+	addChild(box);
 }

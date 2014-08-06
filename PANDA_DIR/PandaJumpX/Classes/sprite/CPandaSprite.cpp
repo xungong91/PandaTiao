@@ -25,7 +25,7 @@ bool CPandaSprite::init()
 		return false;
 	}
 	this->setAnchorPoint(Vec2(0.5f, 0));
-	_desiredPosition = Vec2(200, 0);
+	this->setPosition(Vec2(200, 200));
 
 	int i;
 	//run animation
