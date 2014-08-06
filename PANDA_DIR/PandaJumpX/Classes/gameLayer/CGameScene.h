@@ -13,7 +13,6 @@ public:
 	CREATE_FUNC(CGameScene);
 	bool init();
 
-	cocos2d::PhysicsWorld *mWorld;
 private:
 
 };

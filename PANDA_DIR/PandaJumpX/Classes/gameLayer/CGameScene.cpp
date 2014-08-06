@@ -19,12 +19,10 @@ CGameScene::~CGameScene()
 
 bool CGameScene::init()
 {
-	if (!Scene::initWithPhysics())
+	if (!Scene::init())
 	{
 		return false;
 	}
-	this->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
-
 	this->addChild(LayerColor::create(Color4B(255,255,255,255)));
 
 	//¿ØÖÆ²ã

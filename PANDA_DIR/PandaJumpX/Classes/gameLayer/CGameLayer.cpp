@@ -1,7 +1,9 @@
 #include "CGameLayer.h"
 #include "Defines.h"
+#include "cocos-ext.h"
 
 USING_NS_CC;
+USING_NS_CC_EXT;
 
 CGameLayer::CGameLayer()
 {
@@ -72,13 +74,7 @@ void CGameLayer::updatePositions()
 
 void CGameLayer::initWorld()
 {
-	auto ground = Node::create();
-	ground->setPhysicsBody(PhysicsBody::createEdgeSegment(Vec2(0, 20), Vec2(960, 20)));
-	this->addChild(ground);
-
-	auto box = Node::create();
-	Vec2 points[4] = {Vec2(-100, -100), Vec2(-100, 100), Vec2(100, 100), Vec2(100, -100)};
-	box->setPhysicsBody(PhysicsBody::createPolygon(points, 4));
-	box->setPosition(WINSIZE.width/2, WINSIZE.height/2);
-	addChild(box);
+	// Create a world
+	b2Vec2 gravity = b2Vec2(0.0f, 0.0f);
+	mWorld  = new b2World(gravity);
 }

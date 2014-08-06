@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 #include "sprite/CPandaSprite.h"
 #include "gameLayer/CHudLayer.h"
+#include "Box2D/Box2D.h"
 
 #define PTM_RATIO 32
 
@@ -26,6 +27,8 @@ private:
 	cocos2d::SpriteBatchNode *mPandaBatchNode;
 
 	void initWorld();
+	b2World *mWorld;
+
 };
 
 #endif
