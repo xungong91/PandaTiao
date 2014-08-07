@@ -16,6 +16,9 @@
     <Filter Include="gameLayer">
       <UniqueIdentifier>{0c135e33-e429-4c1b-a6ac-5069c6a03629}</UniqueIdentifier>
     </Filter>
+    <Filter Include="box">
+      <UniqueIdentifier>{bcdf7a68-952f-4281-bffd-7fd6d971afb4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\gameLayer\CHudLayer.cpp">
       <Filter>gameLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\box\GLES-Render.cpp">
+      <Filter>box</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +73,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Defines.h">
       <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\box\GLES-Render.h">
+      <Filter>box</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

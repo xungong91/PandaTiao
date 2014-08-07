@@ -23,7 +23,7 @@ bool CGameScene::init()
 	{
 		return false;
 	}
-	this->addChild(LayerColor::create(Color4B(255,255,255,255)));
+	//this->addChild(LayerColor::create(Color4B(255,255,255,255)));
 
 	//¿ØÖÆ²ã
 	auto hudLayer = CHudLayer::create();

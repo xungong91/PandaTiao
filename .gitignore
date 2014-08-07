@@ -42,3 +42,4 @@ PANDA_DIR/PandaJumpX/cocos2d/
 PANDA_DIR/PandaJumpX/proj.win32/Debug.win32/
 
 *.sdf
+*.opensdf
