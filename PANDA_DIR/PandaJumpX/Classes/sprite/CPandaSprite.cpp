@@ -7,7 +7,7 @@ CPandaSprite::CPandaSprite() :
 	_runAction(NULL),
 	_jumpAction(NULL),
 	mFallSpeed(10.0f),
-	mActionState(_ActionState::not)
+	mActionState(_ActionState::empty)
 {
 
 }
@@ -69,7 +69,7 @@ void CPandaSprite::onExit()
 
 void CPandaSprite::run()
 {
-	if (mActionState == _ActionState::jump_down || mActionState == _ActionState::not)
+	if (mActionState == _ActionState::jump || mActionState == _ActionState::empty)
 	{
 		this->stopAllActions();
 		this->runAction(_runAction);
@@ -83,12 +83,7 @@ void CPandaSprite::jump()
 	{
 		this->stopAllActions();
 		this->runAction(_jumpAction);
-		mActionState = _ActionState::jump_down;
-
-		Vec2 point = this->getPosition();
-		point.add(Vec2(0, 200));
-		_desiredPosition = point;
-		this->setPosition(point);
+		mActionState = _ActionState::jump;
 	}
 }
 
@@ -101,10 +96,4 @@ void CPandaSprite::update( float dt )
 
 void CPandaSprite::onfreeFall(float dt)
 {
-	if (mActionState == _ActionState::jump_down)
-	{
-		Vec2 point = this->getPosition();
-		point.add(Vec2(0, -mFallSpeed));
-		_desiredPosition = point;
-	}
 }
