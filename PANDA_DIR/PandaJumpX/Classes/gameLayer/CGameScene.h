@@ -12,7 +12,6 @@ public:
 	~CGameScene();
 	CREATE_FUNC(CGameScene);
 	bool init();
-
 private:
 
 };

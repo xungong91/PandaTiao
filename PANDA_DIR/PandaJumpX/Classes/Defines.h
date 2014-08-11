@@ -3,4 +3,6 @@
 
 #define WINSIZE cocos2d::Director::getInstance()->getWinSize()
 
+#define PTM_RATIO 32
+
 #endif

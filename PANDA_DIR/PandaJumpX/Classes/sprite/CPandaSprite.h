@@ -15,7 +15,7 @@ public:
 	virtual void onExit();
 
 	void run();
-	void jump();
+	bool jump();
 
 	CC_SYNTHESIZE_RETAIN(cocos2d::Action*, _runAction, RunAction);
 	CC_SYNTHESIZE_RETAIN(cocos2d::Action*, _jumpAction, JumpAction);

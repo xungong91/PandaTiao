@@ -45,6 +45,12 @@
     <ClCompile Include="..\Classes\box\GLES-Render.cpp">
       <Filter>box</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\box\CWorldLayer.cpp">
+      <Filter>box</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\sprite\CBlockSprite.cpp">
+      <Filter>sprite</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -76,6 +82,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\box\GLES-Render.h">
       <Filter>box</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\box\CWorldLayer.h">
+      <Filter>box</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\sprite\CBlockSprite.h">
+      <Filter>sprite</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

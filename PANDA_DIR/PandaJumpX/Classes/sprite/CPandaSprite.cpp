@@ -77,14 +77,16 @@ void CPandaSprite::run()
 	}
 }
 
-void CPandaSprite::jump()
+bool CPandaSprite::jump()
 {
 	if (mActionState == _ActionState::run)
 	{
 		this->stopAllActions();
 		this->runAction(_jumpAction);
 		mActionState = _ActionState::jump;
+		return true;
 	}
+	return false;
 }
 
 void CPandaSprite::update( float dt )
