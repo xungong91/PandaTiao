@@ -1,0 +1,69 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+PandaJump/frameworks/
+PandaJump/tools/
+
+PANDA_DIR/PandaJumpX/cocos2d/
+PANDA_DIR/PandaJumpX/proj.win32/Debug.win32/
+
+*.sdf
+*.opensdf
+# for mac
+*.swp
+*/build/*
+.DS_Store
+*~.nib
+*.mode1 
+*.mode1v3 
+!default.mode1v3
+*.mode2 
+*.mode2v3 
+!default.mode2v3
+*.pbxuser
+!default.pbxuser
+*.perspective
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.xcbkptlist
+*.xccheckout
